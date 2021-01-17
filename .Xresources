@@ -1,0 +1,93 @@
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: true
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcdfilter
+
+URxvt*imLocale: en_US.UTF-8
+URxvt*termName: rxvt-unicode-256color
+URxvt*buffered: false
+URxvt.internalBorder: 5
+Urxvt.intensityStyles: false
+
+URxvt.font: xft:Mononoki Nerd Font:size=11.5
+
+URxvt.saveLines: 2000
+URxvt.scrollBar: false
+URxvt.clipboard.autocopy: true
+!! URxvt extenstions
+URxvt.perl-ext-common: clipboard,default,matcher,resize-font,url-select,keyboard-select
+
+!! url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: firefox
+URxvt.url-select.underline: true
+!! keyboard-select:
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!! resize-font
+URxvt.keysym.C-k: font-size:increase
+URxvt.keysym.C-j: font-size:decrease
+!! Matcher
+URxvt.url-launcher: firefox
+URxvt.matcher.button: 1
+!!clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt*depth: 32
+
+!---		 ---!
+! Gruvbox Dark Hard !
+!---		 ---!
+#define base00 #1d2021
+#define base01 #3c3836
+#define base02 #504945
+#define base03 #665c54
+#define base04 #bdae93
+#define base05 #d5c4a1
+#define base06 #ebdbb2
+#define base07 #fbf1c7
+#define base08 #fb4934
+#define base09 #fe8019
+#define base0A #fabd2f
+#define base0B #b8bb26
+#define base0C #8ec07c
+#define base0D #83a598
+#define base0E #d3869b
+#define base0F #d65d0e
+
+*.foreground:   base05
+#ifdef background_opacity
+*.background:   [background_opacity]base00
+#else
+*.background:   base00
+#endif
+*.cursorColor:  base05
+
+*.color0:       base00
+*.color1:       base08
+*.color2:       base0B
+*.color3:       base0A
+*.color4:       base0D
+*.color5:       base0E
+*.color6:       base0C
+*.color7:       base05
+
+*.color8:       base03
+*.color9:       base08
+*.color10:      base0B
+*.color11:      base0A
+*.color12:      base0D
+*.color13:      base0E
+*.color14:      base0C
+*.color15:      base07
+
+! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+! use 'shell' template to set these if necessary
+*.color16:      base09
+*.color17:      base0F
+*.color18:      base01
+*.color19:      base02
+*.color20:      base04
+*.color21:      base06
