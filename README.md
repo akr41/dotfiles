@@ -12,5 +12,5 @@
 + __browser:__ firefox
 
 ## Preview
-![preview1](~/Screenshots/scrot-1.png)
-![preview2](~/Screenshots/scrot-2.png)
+![preview1](Screenshots/scrot-1.png)
+![preview2](Screenshots/scrot-2.png)
