@@ -23,6 +23,9 @@ background-alt = #3c3836
 foreground = #d5c4a1
 foreground-alt = #bdae93
 
+text = #1d2021
+text-alt = #3c3836
+
 primary = #83a598
 secondary = #d65d0e
 
@@ -47,7 +50,6 @@ padding = 0
 module-margin = 0
 
 font-0 = Mononoki Nerd Font:pixelsize=12;3
-font-1 = fixed:pixelsize=10;1
 
 modules-left = i3 xwindow
 modules-center =
@@ -72,11 +74,11 @@ mount-0 = /
 
 label-mounted =  %free%
 format-mounted-background = #fabd2f
-format-mounted-foreground = ${colors.background}
+format-mounted-foreground = ${colors.text}
 format-mounted-padding = 1
 
 label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${colors.background-alt}
+label-unmounted-foreground = ${colors.text-alt}
 
 [module/i3]
 type = internal/i3
@@ -126,7 +128,7 @@ interval = 2
 format-prefix = "﬙ "
 label = %percentage:2%%
 format-background = #8ec07c
-format-foreground = ${colors.background}
+format-foreground = ${colors.text}
 format-padding = 1
 
 [module/memory]
@@ -136,7 +138,7 @@ format-prefix = " "
 label = %gb_used%
 
 format-background = #b8bb26
-format-foreground = ${colors.background}
+format-foreground = ${colors.text}
 format-padding = 1
 
 [module/wlan]
@@ -147,13 +149,13 @@ interval = 3.0
 format-connected = <ramp-signal> <label-connected>
 label-connected = %essid%
 format-connected-background = #83a598
-format-connected-foreground = ${colors.background}
+format-connected-foreground = ${colors.text}
 format-connected-padding = 1
 
 format-disconnected = <label-disconnected>
 label-disconnected = 睊 %ifname%
 format-disconnected-background = #83a598
-label-disconnected-foreground = ${colors.background-alt}
+label-disconnected-foreground = ${colors.text-alt}
 format-disconnected-padding = 1
 
 ramp-signal-0 = 
@@ -174,7 +176,7 @@ time-alt = %I:%M:%S%P
 
 label = %date% %time%
 label-background = #d65d0e
-label-foreground = ${colors.background}
+label-foreground = ${colors.text}
 label-padding = 1
 label-padding-left = 0
 
@@ -183,12 +185,12 @@ type = internal/pulseaudio
 
 format-volume = <label-volume>
 label-volume =  %percentage%%
-format-volume-foreground = ${colors.background}
+format-volume-foreground = ${colors.text}
 format-volume-background = #fe8019
 format-volume-padding = 1
 
 label-muted =  muted
-format-muted-foreground = #fff
+format-muted-foreground = ${colors.text-alt}
 format-muted-background = #fe8019
 format-muted-padding = 1
 
@@ -200,7 +202,7 @@ warn-temperature = 60
 format = <ramp> <label>
 format-warn = <ramp> <label-warn>
 format-background = #d3869b
-format-foreground = ${colors.background}
+format-foreground = ${colors.text}
 format-padding = 1
 format-warn-padding = 1
 label = %temperature-c%
@@ -216,7 +218,7 @@ exec = ~/.config/polybar/scripts/updates-pacaur.sh
 interval = 1000
 label =  %output%
 format-background = #fb4934
-format-foreground = ${colors.background}
+format-foreground = ${colors.text}
 format-padding = 1
 
 [settings]
