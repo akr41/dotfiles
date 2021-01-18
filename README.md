@@ -14,3 +14,8 @@
 ## Preview
 ![preview1](Screenshots/scrot-1.png)
 ![preview2](Screenshots/scrot-2.png)
+
+### Credits
++ __DistroTube:__ [youtube](https://www.youtube.com/channel/UCVls1GmFKf6WlTraIb_IaJg), [gitlab](https://gitlab.com/dwt1)
++ __Ermanno Ferrari:__ [youtube](https://www.youtube.com/channel/UCX_WM2O-X96URC5n66G-hvw), [website](https://ermannoferrari.net/)
++ __Luke Smith:__ [youtube](https://www.youtube.com/channel/UC2eYFnH61tmytImy1mTYvhA), [github](https://github.com/LukeSmithxyz)
